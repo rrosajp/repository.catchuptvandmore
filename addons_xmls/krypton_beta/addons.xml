@@ -37,7 +37,7 @@
     </website>
     
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta08">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta09">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -87,6 +87,8 @@
 [Fix] Live TV - CBS News (USA)
 [Fix] Catch-Up TV - TVA (Canada)
 [Improvement] Catch-Up TV - TVA (Canada) - Add search feature
+[Improvement] Kill item2dict and item_dict
+[Fix] Website - Autoplus (FR)
     </news>
     <assets>
       <icon>icon.png</icon>
