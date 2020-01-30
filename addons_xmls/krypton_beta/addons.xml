@@ -1,41 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="catchuptvandmore.kodi.krypton.beta" name="Catch-up TV &amp; More Krypton/Beta repository addon" provider-name="SylvainCcchetto,wwark" version="0.0.5">
+<addons><addon id="catchuptvandmore.kodi.krypton.beta" name="Catch-up TV &amp; More's Krypton Beta repository" provider-name="SylvainCecchetto, wwark" version="0.0.6">
   <requires>
     <import addon="xbmc.addon" version="17.0.0" />
   </requires>
-  <extension name="Catch-up TV &amp; More Krypton/Beta repository addon" point="xbmc.addon.repository">
-    
-    <info compressed="false">
-      https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/krypton_beta/addons.xml
-    </info>
-    
-    <checksum>
-      https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/krypton_beta/addons.xml.md5
-    </checksum>
-    
-    <datadir zip="true">
-      https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/zips/krypton_beta
-    </datadir>
-  
+  <extension name="Catch-up TV &amp; More's Krypton Beta repository" point="xbmc.addon.repository">
+    <info compressed="false">https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/krypton_beta/addons.xml</info>
+    <checksum>https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/krypton_beta/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/zips/krypton_beta</datadir>
   </extension>
-  
   <extension point="xbmc.addon.metadata">
-    <summary>
-      To get the Catch-up TV &amp; More addon
-    </summary>
-    
-    <description>
-      Install Catch-up TV &amp; More addon in its latest official version from the official developers repository.
-    </description>
-    
-    <platform>
-      all
-    </platform>
-    
-    <website>
-      https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore
-    </website>
-    
+    <summary>Install Add-ons from Catch-up TV &amp; More repository</summary>
+    <description>Download and install Catch-up TV &amp; More add-on in its latest official version from the official developers repository. As soon as a new beta version is published on the GitHub repository of Catch-up TV &amp; More, this version is available in this repository.</description>
+    <platform>all</platform>  
+    <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
 </addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta10">
   <requires>
