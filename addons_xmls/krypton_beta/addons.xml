@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta25">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta26">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -90,6 +90,8 @@
 [Fix] Catch-up TV - Luxe.TV (FR)
 [Rework] Catch-up TV - TV5 Unis (CA)
 [Fix] Live TV - NHK World (WO)
+[Fix] Live TV - Télé MB (BE)
+[Add] Live TV - RTL (FR)
     </news>
     <assets>
       <icon>icon.png</icon>
