@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta20">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta21">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -83,6 +83,7 @@
 [Fix] Live TV - Bip TV (FR)
 [Remove] Live TV - Canal 10 (FR)
 [Fix] Live TV - IDF 1 (FR)
+[Fix] Catch-up TV - Noovo (CA)
     </news>
     <assets>
       <icon>icon.png</icon>
