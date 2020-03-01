@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta23">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta24">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -78,7 +78,7 @@
 [Fix] Live TV - NRJ 12 / Cherie 25 (FR)
 [Fix] Live TV - TVR (FR)
 [Rename] Grand Lille TV to BFM Lille and also for Grand Littoral TV to BFM Littoral (FR)
-[Fix] Live TV - TL7 (FR)
+[Fix] Catch-up TV and Live TV - TL7 (FR)
 [Fix] Catch-up TV - Arte (WO)
 [Fix] Live TV - Bip TV (FR)
 [Remove] Live TV - Canal 10 (FR)
@@ -87,6 +87,8 @@
 [Fix] Catch-up TV - TV5 Monde (WO)
 [Change/Add] Refactoring BFM Region (Paris, Lyon, Lille, Grand Littoral) - Add Catch-up TV (Lille, Grand Littoral) (FR)
 [Fix] Catch-up TV - LCP (FR)
+[Fix] Catch-up TV - Luxe.TV (FR)
+[Rework] Catch-up TV - TV5 Unis (CA)
     </news>
     <assets>
       <icon>icon.png</icon>
