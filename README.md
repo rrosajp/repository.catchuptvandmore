@@ -55,7 +55,7 @@ python create_repository.py \
 	--info addons_xmls/krypton_release/addons.xml \
 	--checksum addons_xmls/krypton_release/addons.xml.md5 \
 	repo_addons_src/catchuptvandmore.kodi.krypton.release/ \
-	https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#master
+	https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#master:plugin.video.catchuptvandmore
 ```
 
 #### How to update the Krypton Beta repository
@@ -66,7 +66,7 @@ python create_repository.py \
 	--info addons_xmls/krypton_beta/addons.xml \
 	--checksum addons_xmls/krypton_beta/addons.xml.md5 \
 	repo_addons_src/catchuptvandmore.kodi.krypton.beta/ \
-	https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#dev
+	https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#dev:plugin.video.catchuptvandmore
 ```
 
 #### How to update the Leia Test DRM repository
