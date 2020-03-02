@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta26">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.17~beta27">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -59,12 +59,10 @@
 [Fix] Live TV - NTV (CA)
 [Fix] Live TV - Sport En France (FR)
 [Fix] Live TV and Catchup TV - CNews (FR)
-[Improvement] Favourites - Migrate from pickled to json data
+[Improvement] Migrate from pickled fav to json data and kill item2dict and item_dict
 [Fix] Catch-Up TV - Auvio RTBF (BE)
 [Fix] Live TV - CBS News (USA)
-[Fix] Catch-Up TV - TVA (Canada)
-[Improvement] Catch-Up TV - TVA (Canada) - Add search feature
-[Improvement] Kill item2dict and item_dict
+[Fix/Improvement] Catch-Up TV - TVA (Canada) - Add search feature
 [Fix] Website - Autoplus (FR)
 [Fix] Live TV - TV7 Bordeaux (FR)
 [Fix] Broken settings
@@ -77,7 +75,6 @@
 [Add] Catch-up TV - Okoo - France TV (FR)
 [Fix] Live TV - NRJ 12 / Cherie 25 (FR)
 [Fix] Live TV - TVR (FR)
-[Rename] Grand Lille TV to BFM Lille and also for Grand Littoral TV to BFM Littoral (FR)
 [Fix] Catch-up TV and Live TV - TL7 (FR)
 [Fix] Catch-up TV - Arte (WO)
 [Fix] Live TV - Bip TV (FR)
@@ -85,13 +82,15 @@
 [Fix] Live TV - IDF 1 (FR)
 [Fix] Catch-up TV - Noovo (CA)
 [Fix] Catch-up TV - TV5 Monde (WO)
-[Change/Add] Refactoring BFM Region (Paris, Lyon, Lille, Grand Littoral) - Add Catch-up TV (Lille, Grand Littoral) (FR)
+[Rename/Change/Add] Refactoring BFM Region (Paris, Lyon, Lille, Grand Littoral) - Add Catch-up TV (BFM Lille, BFM Grand Littoral) (FR) - Anciennement Grand Lille et Grand Littoral TV
 [Fix] Catch-up TV - LCP (FR)
 [Fix] Catch-up TV - Luxe.TV (FR)
 [Rework] Catch-up TV - TV5 Unis (CA)
 [Fix] Live TV - NHK World (WO)
 [Fix] Live TV - Télé MB (BE)
 [Add] Live TV - RTL (FR)
+[Add] Catch-up TV - M6 Courses (6play) (FR)
+[Add] Website - Fosdem 2020 (BE)
     </news>
     <assets>
       <icon>icon.png</icon>
