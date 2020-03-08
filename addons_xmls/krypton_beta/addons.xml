@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.18~beta05">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.18~beta06">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -67,6 +67,7 @@
 [Fix] Catch-up TV - Game One (FR)
 [Rename/Fix] Catch-up TV - Lumni (FR) - Previously FranceTV Education
 [Remove] Catch-up TV - IRL and Studio 4 (FR) - Contents are available in France TV Slash
+[Add] Live TV - CBC (CA) (Ottawa|Montreal|Charlottetown|Fredericton|Halifax|Windsor|Yellowknife|Winnipeg|Regina|Calgary|Edmonton|Vancouver|Toronto|St. John's)
     </news>
     <assets>
       <icon>icon.png</icon>
