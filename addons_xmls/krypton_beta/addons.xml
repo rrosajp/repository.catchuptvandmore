@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.18~beta07">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.18~beta08">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -70,6 +70,7 @@
 [Add] Live TV - CBC (CA) (Ottawa|Montreal|Charlottetown|Fredericton|Halifax|Windsor|Yellowknife|Winnipeg|Regina|Calgary|Edmonton|Vancouver|Toronto|St. John's)
 [Add] Catch-up TV - 100% Foot - 6play (FR)
 [Add] Live TV - NOVOO (CA)
+[ReAdd] Live TV - MiTele (Télécinco, Cuatro, ...) (ES)
     </news>
     <assets>
       <icon>icon.png</icon>
