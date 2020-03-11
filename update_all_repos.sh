@@ -33,83 +33,84 @@ function extract_addon_version() {
 
 
 
-
-echo -e "\n# Get addons versions currently on the repo\n"
-
-krypton_beta_addon_xml=`cat ./zips/krypton_beta/plugin.video.catchuptvandmore/addon.xml`
-krypton_beta_current_version=`extract_addon_version "$krypton_beta_addon_xml"`
-echo -e "\t* Krypton beta addon version on the repo: $krypton_beta_current_version"
-
-krypton_release_addon_xml=`cat ./zips/krypton_release/plugin.video.catchuptvandmore/addon.xml`
-krypton_release_current_version=`extract_addon_version "$krypton_release_addon_xml"`
-echo -e "\t* Krypton release addon version on the repo: $krypton_release_current_version"
-
-
-
-
-
-echo -e "\n# Get last addons versions avaible on GitHub repos that contains the plugin sources\n"
-
-krypton_beta_addon_xml=`wget https://raw.github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/dev/plugin.video.catchuptvandmore/addon.xml -q -O -`
-krypton_beta_last_version=`extract_addon_version "$krypton_beta_addon_xml"`
-echo -e "\t* Krypton beta addon last version: $krypton_beta_last_version"
-
-krypton_release_addon_xml=`wget https://raw.github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/master/plugin.video.catchuptvandmore/addon.xml -q -O -`
-krypton_release_last_version=`extract_addon_version "$krypton_release_addon_xml"`
-echo -e "\t* Krypton release addon last version: $krypton_release_last_version"
-
-
-
-
-echo -e "\n# Compare current and new version of all repos in order to commit/push if necessary\n"
 commit_msg="Auto update repo(s): "
-need_to_commit_push=false
+need_to_commit_push="false"
 
 
-if [ "$krypton_beta_current_version" == "$krypton_beta_last_version" ]
-then
-	echo -e "\t* Last version of Krypton beta already on the repo"
-else
-	echo -e "\t* New version detected for Krypton beta"
-	commit_msg="$commit_msg Krypton beta,"
-	need_to_commit_push=true
+# Krypton release repo
+echo -e "\n# Check if we need to update the Krypton release official repository"
 
-	echo -e "\t\t- Start create_repository.py on Krypton beta repo"
-	python ./create_repository.py \
-		--datadir ./zips/krypton_beta \
-		--info ./addons_xmls/krypton_beta/addons.xml \
-		--checksum ./addons_xmls/krypton_beta/addons.xml.md5 \
-		./repo_addons_src/catchuptvandmore.kodi.krypton.beta/ \
-		https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#dev:plugin.video.catchuptvandmore
+need_to_update_repo="no"
+
+## plugin.video.catchuptvandmore
+krypton_release_cutv_current_version="$(extract_addon_version "$(cat ./zips/krypton_release/plugin.video.catchuptvandmore/addon.xml)")"
+echo -e "\t* Version of plugin.video.catchuptvandmore on the repository is: $krypton_release_cutv_current_version"
+
+krypton_release_cutv_last_version="$(extract_addon_version "$(wget https://raw.github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/master/plugin.video.catchuptvandmore/addon.xml -q -O -)")"
+echo -e "\t* Version of plugin.video.catchuptvandmore on master branch available is: $krypton_release_cutv_last_version"
+
+if [ "$krypton_release_cutv_current_version" != "$krypton_release_cutv_last_version" ]; then
+	need_to_update_repo="yes"
 fi
 
 
-if [ "$krypton_release_current_version" == "$krypton_release_last_version" ]
-then
-	echo -e "\t* Last version of Krypton release already on the repo"
-else
-	echo -e "\t* New version detected for Krypton release"
+if [ "${need_to_update_repo}" == "yes" ]; then
+	echo -e "\n\t--> Need to update this repository"
+	
 	commit_msg="$commit_msg Krypton release,"
-	need_to_commit_push=true
+	need_to_commit_push="true"
 
-	echo -e "\t\t- Start create_repository.py on Krypton release repo"
+	echo -e "\t\t- Start create_repository.py on Krypton release repository"
 	python ./create_repository.py \
 		--datadir ./zips/krypton_release \
 		--info ./addons_xmls/krypton_release/addons.xml \
 		--checksum ./addons_xmls/krypton_release/addons.xml.md5 \
 		./repo_addons_src/catchuptvandmore.kodi.krypton.release/ \
 		https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#master:plugin.video.catchuptvandmore
+else
+	echo -e "\n\t--> No need to update this repository"
 fi
 
 
 
+# Krypton beta repo
+echo -e "\n# Check if we need to update the Krypton beta official repository"
+
+need_to_update_repo="no"
+
+## plugin.video.catchuptvandmore
+krypton_beta_cutv_current_version="$(extract_addon_version "$(cat ./zips/krypton_beta/plugin.video.catchuptvandmore/addon.xml)")"
+echo -e "\t* Version of plugin.video.catchuptvandmore is: $krypton_beta_cutv_current_version"
+
+krypton_beta_cutv_last_version="$(extract_addon_version "$(wget https://raw.github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/dev/plugin.video.catchuptvandmore/addon.xml -q -O -)")"
+echo -e "\t* Version of plugin.video.catchuptvandmore on dev branch available is: $krypton_beta_cutv_last_version"
+
+if [ "$krypton_beta_cutv_current_version" != "$krypton_beta_cutv_last_version" ]; then
+	need_to_update_repo="yes"
+fi
 
 
+if [ "${need_to_update_repo}" == "yes" ]; then
+	echo -e "\n\t--> Need to update this repository"
+	
+	commit_msg="$commit_msg Krypton beta,"
+	need_to_commit_push="true"
+
+	echo -e "\t\t- Start create_repository.py on Krypton beta repository"
+	python ./create_repository.py \
+		--datadir ./zips/krypton_beta \
+		--info ./addons_xmls/krypton_beta/addons.xml \
+		--checksum ./addons_xmls/krypton_beta/addons.xml.md5 \
+		./repo_addons_src/catchuptvandmore.kodi.krypton.beta/ \
+		https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#dev:plugin.video.catchuptvandmore
+else
+	echo -e "\n\t--> No need to update this repository"
+fi
 
 
-if [ "$need_to_commit_push" = true ]
-then
-    echo -e "\n# Change detected on one or more repos, need to commit/push on the GitHub repo\n"
+# Commit and push if needed
+if [ "$need_to_commit_push" == "true" ]; then
+    echo -e "\n# Need to update one or more repos, need to commit/push on the GitHub repo\n"
     echo -e "\t* Commit message: $commit_msg"
     git add --all
     git commit -m "$commit_msg"
@@ -118,12 +119,5 @@ then
 else
 	echo -e "\n# No change detected on any repos, no need to commit/push on the GitHub repo\n"
 fi
-
-
-exit 0
-
-
-
-
 
 
