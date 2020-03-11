@@ -77,7 +77,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 		--info ./addons_xmls/krypton_release/addons.xml \
 		--checksum ./addons_xmls/krypton_release/addons.xml.md5 \
 		./repo_addons_src/catchuptvandmore.kodi.krypton.release/ \
-		https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#master:plugin.video.catchuptvandmore
+		https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#master:plugin.video.catchuptvandmore \
 		https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore\#master:resource.images.catchuptvandmore
 else
 	echo -e "\n\t--> No need to update this repository"
@@ -125,7 +125,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 		--info ./addons_xmls/krypton_beta/addons.xml \
 		--checksum ./addons_xmls/krypton_beta/addons.xml.md5 \
 		./repo_addons_src/catchuptvandmore.kodi.krypton.beta/ \
-		https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#dev:plugin.video.catchuptvandmore
+		https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#dev:plugin.video.catchuptvandmore \
 		https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore\#master:resource.images.catchuptvandmore
 else
 	echo -e "\n\t--> No need to update this repository"
