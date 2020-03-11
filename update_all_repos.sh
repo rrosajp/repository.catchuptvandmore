@@ -53,6 +53,17 @@ if [ "$krypton_release_cutv_current_version" != "$krypton_release_cutv_last_vers
 	need_to_update_repo="yes"
 fi
 
+## resource.images.catchuptvandmore
+krypton_release_images_current_version="$(extract_addon_version "$(cat ./zips/krypton_release/resource.images.catchuptvandmore/addon.xml)")"
+echo -e "\t* Version of resource.images.catchuptvandmore on the repository is: $krypton_release_images_current_version"
+
+krypton_release_images_last_version="$(extract_addon_version "$(wget https://raw.github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore/master/resource.images.catchuptvandmore/addon.xml -q -O -)")"
+echo -e "\t* Version of resource.images.catchuptvandmore on master branch available is: $krypton_release_images_last_version"
+
+if [ "$krypton_release_images_current_version" != "$krypton_release_images_last_version" ]; then
+	need_to_update_repo="yes"
+fi
+
 
 if [ "${need_to_update_repo}" == "yes" ]; then
 	echo -e "\n\t--> Need to update this repository"
@@ -67,6 +78,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 		--checksum ./addons_xmls/krypton_release/addons.xml.md5 \
 		./repo_addons_src/catchuptvandmore.kodi.krypton.release/ \
 		https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#master:plugin.video.catchuptvandmore
+		https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore\#master:resource.images.catchuptvandmore
 else
 	echo -e "\n\t--> No need to update this repository"
 fi
@@ -89,6 +101,17 @@ if [ "$krypton_beta_cutv_current_version" != "$krypton_beta_cutv_last_version" ]
 	need_to_update_repo="yes"
 fi
 
+## resource.images.catchuptvandmore
+krypton_beta_images_current_version="$(extract_addon_version "$(cat ./zips/krypton_beta/resource.images.catchuptvandmore/addon.xml)")"
+echo -e "\t* Version of resource.images.catchuptvandmore on the repository is: $krypton_beta_images_current_version"
+
+krypton_beta_images_last_version="$(extract_addon_version "$(wget https://raw.github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore/master/resource.images.catchuptvandmore/addon.xml -q -O -)")"
+echo -e "\t* Version of resource.images.catchuptvandmore on master branch available is: $krypton_beta_images_last_version"
+
+if [ "$krypton_beta_images_current_version" != "$krypton_beta_images_last_version" ]; then
+	need_to_update_repo="yes"
+fi
+
 
 if [ "${need_to_update_repo}" == "yes" ]; then
 	echo -e "\n\t--> Need to update this repository"
@@ -103,6 +126,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 		--checksum ./addons_xmls/krypton_beta/addons.xml.md5 \
 		./repo_addons_src/catchuptvandmore.kodi.krypton.beta/ \
 		https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore\#dev:plugin.video.catchuptvandmore
+		https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore\#master:resource.images.catchuptvandmore
 else
 	echo -e "\n\t--> No need to update this repository"
 fi
