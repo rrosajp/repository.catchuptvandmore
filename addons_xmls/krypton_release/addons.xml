@@ -104,7 +104,7 @@
   </extension>
 </addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" provider-name="SylvainCecchetto,wwark" version="1.0.1">
   <requires>
-    <import addon="kodi.resource" version="1.0.1" />
+    <import addon="kodi.resource" version="1.0.0" />
   </requires>
   <extension compile="false" point="kodi.resource.images" />
   <extension point="xbmc.addon.metadata">
