@@ -102,7 +102,7 @@
       <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" provider-name="SylvainCecchetto,wwark" version="1.0.1">
+</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" provider-name="SylvainCecchetto,wwark" version="1.0.2">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
@@ -121,6 +121,8 @@
 [Add] Cameroon flag
 [Add] CRTV channel logo
 [Add] CRTV News channel logo
+[Version 1.0.2]
+[Fix] Fix error in addon.xml
     </news>
     <assets>
       <icon>icon.png</icon>
