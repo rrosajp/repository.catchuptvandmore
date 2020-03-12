@@ -27,6 +27,7 @@
     <import addon="script.module.tzlocal" version="2.0.0" />
     <import addon="script.module.future" version="0.17.1" />
     <import addon="script.module.kodi-six" version="0.0.4" />
+    <import addon="resource.images.catchuptvandmore" version="1.0.0" />
   </requires>
   <extension library="addon.py" point="xbmc.python.pluginsource">
     <provides>video</provides>
@@ -69,8 +70,9 @@
 [Remove] Catch-up TV - IRL and Studio 4 (FR) - Contents are available in France TV Slash
 [Add] Live TV - CBC (CA) (Ottawa|Montreal|Charlottetown|Fredericton|Halifax|Windsor|Yellowknife|Winnipeg|Regina|Calgary|Edmonton|Vancouver|Toronto|St. John's)
 [Add] Catch-up TV - 100% Foot - 6play (FR)
-[Add] Live TV - NOVOO (CA)
+[Add] Live TV - V Télé (CA)
 [ReAdd] Live TV - MiTele (Télécinco, Cuatro, ...) (ES)
+[Add] Live TV - CRTV and CRTV News (CM)
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -82,9 +84,9 @@
       <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" provider-name="SylvainCecchetto,wwark" version="1.0.0">
+</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" provider-name="SylvainCecchetto,wwark" version="1.0.1">
   <requires>
-    <import addon="kodi.resource" version="1.0.0" />
+    <import addon="kodi.resource" version="1.0.1" />
   </requires>
   <extension compile="false" point="kodi.resource.images" />
   <extension point="xbmc.addon.metadata">
@@ -97,8 +99,10 @@
     <email>catch.up.tv.and.more at gmail dot com</email>
     <source>https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore</source>
     <news>
-[Version 1.0.0]
-Initial version
+[Version 1.0.1]
+[Add] Cameroon flag
+[Add] CRTV channel logo
+[Add] CRTV News channel logo
     </news>
     <assets>
       <icon>icon.png</icon>
