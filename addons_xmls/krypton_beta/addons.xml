@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="catchuptvandmore.kodi.krypton.beta" name="Catch-up TV &amp; More's Krypton Beta repository" provider-name="SylvainCecchetto, wwark" version="0.0.6">
+<addons><addon id="catchuptvandmore.kodi.krypton.beta" name="Catch-up TV &amp; More's Krypton Beta repository" version="0.0.6" provider-name="SylvainCecchetto, wwark">
   <requires>
     <import addon="xbmc.addon" version="17.0.0" />
   </requires>
-  <extension name="Catch-up TV &amp; More's Krypton Beta repository" point="xbmc.addon.repository">
+  <extension point="xbmc.addon.repository" name="Catch-up TV &amp; More's Krypton Beta repository">
     <info compressed="false">https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/krypton_beta/addons.xml</info>
     <checksum>https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/krypton_beta/addons.xml.md5</checksum>
     <datadir zip="true">https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/zips/krypton_beta</datadir>
@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.18~beta09">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.18~beta11" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -29,14 +29,14 @@
     <import addon="script.module.kodi-six" version="0.0.4" />
     <import addon="resource.images.catchuptvandmore" version="1.0.0" />
   </requires>
-  <extension library="addon.py" point="xbmc.python.pluginsource">
+  <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
   </extension>
-  <extension library="service.py" point="xbmc.service" />
+  <extension point="xbmc.service" library="service.py" />
   <extension point="xbmc.addon.metadata">
     
     
-    
+    <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="fr_FR">Catch-Up TV &amp; More : Replay TV, Live TV et bien plus encore.</summary>
     <description lang="fr_FR">Catch-Up TV &amp; More regroupe dans un même plugin Kodi l'ensemble des vidéos des différents services et chaînes de Replay TV (rattrapage TV) ainsi que l'accès au direct. De plus, cette extension vous permet d'accéder rapidement aux vidéos et contenus proposés par certains sites internet.</description>
     <disclaimer lang="fr_FR">Retours de bugs, propositions d'améliorations ou d'ajout de contenus sont les bienvenue ! GitHub ou e-mail.</disclaimer>
@@ -73,6 +73,9 @@
 [Add] Live TV - V Télé (CA)
 [ReAdd] Live TV - MiTele (Télécinco, Cuatro, ...) (ES)
 [Add] Live TV - CRTV and CRTV News (CM)
+[Fix] Catch-up TV - Paramount Channel (FR)
+[Add] Live TV - Tele M1 (CH)
+[Add] Live TV - Yoopa, LCN (CA)
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -84,11 +87,11 @@
       <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" provider-name="SylvainCecchetto,wwark" version="1.0.3">
+</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.3" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
-  <extension compile="false" point="kodi.resource.images" />
+  <extension point="kodi.resource.images" compile="false" />
   <extension point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary lang="en_GB">Channel logos and artwork used in Catch-up TV &amp; More</summary>
