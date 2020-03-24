@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.18~beta11" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.18~beta12" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -61,7 +61,7 @@
 [Add] Setting to autorun the plugin when Kodi starts
 [Add] Live TV - EDGE Sport (UK)
 [Add] Live TV - ICI Télé (CA) - Add Live TV for each Region (Vancouver|Regina|Toronto|Edmonton|Rimouski|Québec|Winnipeg|Moncton|Ottawa|Montréal)
-[Fix] Live TV - Blaze TV (UK)
+[Fix] Catch-up TV and Live TV - Blaze TV (UK)
 [Add] Live TV - Europe 1 (FR)
 [Add] Live TV - LN24 (BE)
 [Add] Catch-up TV - Canal C (BE)
@@ -76,6 +76,9 @@
 [Fix] Catch-up TV - Paramount Channel (FR)
 [Add] Live TV - Tele M1 (CH)
 [Add] Live TV - Yoopa, LCN (CA)
+[Fix] Catch-up TV - Jack (mycanal) (FR)
+[Fix] Live TV - La7 (IT) - DRM content
+[Fix] Catch-up TV - RTBF (BE)
     </news>
     <assets>
       <icon>icon.png</icon>
