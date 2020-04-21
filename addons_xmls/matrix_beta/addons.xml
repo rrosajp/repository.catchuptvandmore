@@ -14,4 +14,144 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" provider-name="SylvainCecchetto,wwark" version="0.2.21~beta01+matrix.1">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.youtube.dl" version="18.225.0" />
+    <import addon="script.module.requests" version="2.12.4" />
+    <import addon="script.module.codequick" version="0.9.10" />
+    <import addon="script.module.pytz" version="2014.2" />
+    <import addon="script.module.inputstreamhelper" version="0.3.3" />
+    <import addon="script.module.six" version="1.11.0" />
+    <import addon="script.module.pyqrcode" version="0.0.1" />
+    <import addon="script.module.tzlocal" version="2.0.0" />
+    <import addon="script.module.future" version="0.17.1" />
+    <import addon="script.module.kodi-six" version="0.0.4" />
+    <import addon="resource.images.catchuptvandmore" version="1.0.0" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" />
+  <extension point="xbmc.addon.metadata">
+    
+    
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="fr_FR">Catch-Up TV &amp; More : Replay TV, Live TV et bien plus encore.</summary>
+    <description lang="fr_FR">Catch-Up TV &amp; More regroupe dans un même plugin Kodi l'ensemble des vidéos des différents services et chaînes de Replay TV (rattrapage TV) ainsi que l'accès au direct. De plus, cette extension vous permet d'accéder rapidement aux vidéos et contenus proposés par certains sites internet.</description>
+    <disclaimer lang="fr_FR">Retours de bugs, propositions d'améliorations ou d'ajout de contenus sont les bienvenue ! GitHub ou e-mail.</disclaimer>
+    <summary lang="en_GB">Catch-Up TV &amp; More: It's all in the title.</summary>
+    <description lang="en_GB">Catch-Up TV &amp; More brings together in one Kodi add-on all the videos of the various services and channels of catch-up TV and live TV. Furthermore, this add-on allows you to quickly access the videos and content offered by certain websites.</description>
+    <disclaimer lang="en_GB">Bug reports, suggestions for improvements or content additions are welcome! GitHub or e-mail.</disclaimer>
+    <description lang="he_IL">ההרחבה מאפשרת לך להתעדכן בתוכן השידורים תוסף אחד של קודי מרכז את כל קטעי וידאו של שירותים שונים וערוצי תוכן משודר. בנוסף, תוספת זו מאפשרת לך לגשת במהירות לסרטונים ולתכנים המוצעים על ידי אתרים מסוימים.</description>
+    <disclaimer lang="he_IL">דוחות שגיאה, הצעות לשיפור או תוספות תוכן יתקבלו בברכה! ל-GitHub או אימייל.</disclaimer>
+    <summary lang="nl_NL">Catch-Up TV &amp; More: Replay tv, Live tv en meer.</summary>
+    <description lang="nl_NL">Catch-Up TV &amp; More brengt replay en live tv van verschikkende diensten en kanalen samen in één Kodi add-on. Bovendien stelt deze add-on u instaat video's van bepaalde websites makkelijk te benaderen.</description>
+    <disclaimer lang="nl_NL">Bug meldingen, suggesties ter verbetering of additionele inhouden zijn welkom! Via GitHub of e-mail.</disclaimer>
+
+    <language />
+    <platform>all</platform>
+    <license>GPL-2.0</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=307107</forum>
+    <website>https://catch-up-tv-and-more.github.io/</website>
+    <email>catch.up.tv.and.more at gmail dot com</email>
+    <source>https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore</source>
+    <news>
+[Version 0.2.21]
+[Fix/Add] Catch-up TV - Japaneses channels (JP)
+    </news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
+    </assets>
+  </extension>
+</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" provider-name="SylvainCecchetto,wwark" version="1.0.5">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0" />
+  </requires>
+  <extension compile="false" point="kodi.resource.images" />
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_GB">Channel logos and artwork used in Catch-up TV &amp; More</summary>
+    <description lang="en_GB">Channel logos and artwork used in Catch-up TV &amp; More</description>
+    <platform>all</platform>
+    <license>GPL-2.0</license>
+    <website>https://catch-up-tv-and-more.github.io/</website>
+    <email>catch.up.tv.and.more at gmail dot com</email>
+    <source>https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore</source>
+    <news>
+[Version 1.0.1]
+[Add] Cameroon flag
+[Add] CRTV channel logo
+[Add] CRTV News channel logo
+[Version 1.0.2]
+[Fix] Fix error in addon.xml
+[Version 1.0.3]
+[Fix] Use same size for root and countries images
+[Version 1.0.4]
+[Move] channels/ca/v_noovo.png --&gt; channels/ca/vtele.png
+[Add] channels/ch/telem1 channel logo
+[Add] channels/ca/lcn channel logo
+[Add] channels/ca/yoopa channel logo
+[Add] channels/be/ladeux channel logo
+[Add] channels/be/latrois channel logo
+[Add] channels/be/laune channel logo
+[Version 1.0.5]
+[Add] channels/jp/nhk channel logo
+[Add] channels/jp/tvo channel logo
+    </news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon><addon id="script.module.youtube.dl" name="youtube-dl Control" provider-name="Rick Phillips (ruuk)" version="20.324.0+matrix.1">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.addon.signals" version="0.0.1" />
+        <import addon="script.module.kodi-six" version="0.0.4" />
+    </requires>
+    <extension library="control.py" point="xbmc.python.script">
+        <provides>executable</provides>
+    </extension>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Module providing access to youtube-dl video stream extraction</summary>
+        <description lang="en_GB">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
+        <summary lang="el_EL">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο</summary>
+        <description lang="el_EL">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο από εκατοντάδες ιστότοπους. Η έκδοση βασίζεται στην έκδοση ημερομηνίας του youtube-dl: EE.MHH.EK όπου ΕΚ η υπό-έκδοση συγκεκριμένα για το πρόσθετο. Επιπλέον δίνει δυνατότητα μεταφόρτωσης στο παρασκήνιο με ουρά και διαχειριστή αυτής.</description>
+        <summary lang="es_ES">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video</summary>
+        <description lang="es_ES">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video de cientos de sitios. La versión está basada en la versión de fecha youtube-dl: YY.MDD.V donde V es la subversión específica del complemento. También permite descargas con la opción de descarga en segundo plano con una cola y un administrador de colas.</description>
+        <license>LGPL-2.1-only</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
+        <source>https://github.com/ruuk/script.module.youtube.dl</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon><addon id="script.module.codequick" name="CodeQuick" provider-name="willforde" version="0.9.11+matrix.1">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.youtube.dl" version="18.0.0" />
+        <import addon="script.module.htmlement" version="0.2.3" />
+    </requires>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Framework for creating kodi add-on's.</summary>
+        <description lang="en_GB">Codequick is a framework for kodi add-on's. The goal of this framework is to simplify add-on development. This is achieved by reducing the amount of boilerplate code to a minimum, automating tasks like route dispatching and sort method selection. Ultimately allowing the developer to focus primarily on scraping content from websites and passing it to kodi.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>https://github.com/willforde/script.module.codequick</source>
+        <email>willforde+codequick@gmail.com</email>
+        <platform>all</platform>
+        <language>en</language>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
 </addon></addons>
