@@ -155,6 +155,69 @@ else
 fi
 
 
+# Matrix beta repo
+echo -e "\n# Check if we need to update the Matrix beta official repository"
+
+need_to_update_repo="no"
+
+## plugin.video.catchuptvandmore
+matrix_beta_cutv_current_version="$(extract_addon_version "$(cat ./zips/matrix_beta/plugin.video.catchuptvandmore/addon.xml)")"
+echo -e "\t* Version of plugin.video.catchuptvandmore is: $matrix_beta_cutv_current_version"
+
+matrix_beta_cutv_last_version="$(extract_addon_version "$(wget https://raw.github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/kodi19/plugin.video.catchuptvandmore/addon.xml -q -O -)")"
+echo -e "\t* Version of plugin.video.catchuptvandmore on kodi19 branch available is: $matrix_beta_cutv_last_version"
+
+if [ "$matrix_beta_cutv_current_version" != "$matrix_beta_cutv_last_version" ]; then
+	need_to_update_repo="yes"
+fi
+
+## resource.images.catchuptvandmore
+matrix_beta_images_current_version="$(extract_addon_version "$(cat ./zips/matrix_beta/resource.images.catchuptvandmore/addon.xml)")"
+echo -e "\t* Version of resource.images.catchuptvandmore on the repository is: $matrix_beta_images_current_version"
+
+matrix_beta_images_last_version="$(extract_addon_version "$(wget https://raw.github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore/master/resource.images.catchuptvandmore/addon.xml -q -O -)")"
+echo -e "\t* Version of resource.images.catchuptvandmore on master branch available is: $matrix_beta_images_last_version"
+
+if [ "$matrix_beta_images_current_version" != "$matrix_beta_images_last_version" ]; then
+	need_to_update_repo="yes"
+fi
+
+
+if [ "${need_to_update_repo}" == "yes" ]; then
+	echo -e "\n\t--> Need to update this repository"
+
+	# Download cutv&m zip file from GitHub repo
+	mkdir temp
+	wget https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore/archive/kodi19.zip -q -P ./temp
+
+	# Unzip cutv&m zip file
+	unzip -q ./temp/kodi19.zip -d ./temp
+
+	# Set reuselanguageinvoker to true
+	sed -i 's#<reuselanguageinvoker>false</reuselanguageinvoker>#<reuselanguageinvoker>true</reuselanguageinvoker>#g' ./temp/plugin.video.catchuptvandmore-kodi19/plugin.video.catchuptvandmore/addon.xml
+	
+	# Update commit message
+	commit_msg="$commit_msg Matrix beta,"
+	
+	# Set need_to_commit_push to true in order to trigger a commit and push at the end of the script
+	need_to_commit_push="true"
+
+	# Update our Kodi repo with create_repository.py
+	echo -e "\t\t- Start create_repository.py on Matrix beta repository"
+	python ./create_repository.py \
+		--datadir ./zips/matrix_beta \
+		--info ./addons_xmls/matrix_beta/addons.xml \
+		--checksum ./addons_xmls/matrix_beta/addons.xml.md5 \
+		./repo_addons_src/catchuptvandmore.kodi.matrix.beta/ \
+		./temp/plugin.video.catchuptvandmore-kodi19/plugin.video.catchuptvandmore/ \
+		https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore\#master:resource.images.catchuptvandmore \
+		https://github.com/Catch-up-TV-and-More/script.module.youtube.dl\#kodi19 \
+		https://github.com/Catch-up-TV-and-More/script.module.codequick\#kodi19:script.module.codequick
+else
+	echo -e "\n\t--> No need to update this repository"
+fi
+
+
 # Commit and push if needed
 if [ "$need_to_commit_push" == "true" ]; then
 
