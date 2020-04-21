@@ -81,7 +81,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 
 	# Update our Kodi repo with create_repository.py
 	echo -e "\t\t- Start create_repository.py on Krypton release repository"
-	python ./create_repository.py \
+	python3 ./create_repository.py \
 		--datadir ./zips/krypton_release \
 		--info ./addons_xmls/krypton_release/addons.xml \
 		--checksum ./addons_xmls/krypton_release/addons.xml.md5 \
@@ -143,7 +143,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 
 	# Update our Kodi repo with create_repository.py
 	echo -e "\t\t- Start create_repository.py on Krypton beta repository"
-	python ./create_repository.py \
+	python3 ./create_repository.py \
 		--datadir ./zips/krypton_beta \
 		--info ./addons_xmls/krypton_beta/addons.xml \
 		--checksum ./addons_xmls/krypton_beta/addons.xml.md5 \
@@ -204,7 +204,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 
 	# Update our Kodi repo with create_repository.py
 	echo -e "\t\t- Start create_repository.py on Matrix beta repository"
-	python ./create_repository.py \
+	python3 ./create_repository.py \
 		--datadir ./zips/matrix_beta \
 		--info ./addons_xmls/matrix_beta/addons.xml \
 		--checksum ./addons_xmls/matrix_beta/addons.xml.md5 \
