@@ -14,12 +14,11 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.21~beta05" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.21~beta06" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
     <import addon="script.module.requests" version="2.12.4" />
-    <import addon="script.module.codequick" version="0.9.10" />
     <import addon="script.module.pytz" version="2014.2" />
     <import addon="script.module.inputstreamhelper" version="0.3.3" />
     <import addon="script.module.six" version="1.11.0" />
@@ -27,6 +26,7 @@
     <import addon="script.module.tzlocal" version="2.0.0" />
     <import addon="script.module.future" version="0.17.1" />
     <import addon="script.module.kodi-six" version="0.0.4" />
+    <import addon="script.module.htmlement" version="0.2.3" />
     <import addon="resource.images.catchuptvandmore" version="1.0.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
@@ -64,6 +64,7 @@
 [Fix] Add check for download mode
 [Fix] Disable reuselanguageinvoker to fix Youtube-DL download feature
 [Fix] Catch-up TV - La 1ère (FR)
+[Other] Include Codequick framework
     </news>
     <assets>
       <icon>icon.png</icon>
