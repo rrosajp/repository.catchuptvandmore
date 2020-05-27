@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.22~beta00" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.22~beta01" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -57,15 +57,8 @@
     <email>catch.up.tv.and.more at gmail dot com</email>
     <source>https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore</source>
     <news>
-[Version 0.2.21]
-[Fix/Add] Catch-up TV - Japaneses channels (JP)
-[Add] Catch-up TV - Télé Grenoble (FR)
-[Fix] Catch-up TV - Arte (WO)
-[Fix] Add check for download mode
-[Fix] Disable reuselanguageinvoker to fix Youtube-DL download feature
-[Fix] Catch-up TV - La 1ère (FR)
-[Other] Include Codequick framework
-[Fix] Live TV - RTLPLAY BE (BE)
+[Version 0.2.22]
+[Fix/Improve] Website - INA
     </news>
     <assets>
       <icon>icon.png</icon>
