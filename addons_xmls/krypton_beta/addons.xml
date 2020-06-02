@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.22~beta02" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.22~beta03" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -60,6 +60,7 @@
 [Version 0.2.22]
 [Fix/Improve] Website - INA
 [Fix] Catch-up - TVER (JP)
+[Fix] Live TV - Télé Quebec (CA)
     </news>
     <assets>
       <icon>icon.png</icon>
