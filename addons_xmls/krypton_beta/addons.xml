@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.22~beta09" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.22~beta10" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.youtube.dl" version="18.225.0" />
@@ -73,6 +73,7 @@
 [Fix] Catch-up - Caledonia (FR)
 [Add] Live TV - Ethiopian channels (ET) (fix #305)
 [Merge] RMC Story and RMC Découverte module (FR)
+[Add] Live TV - Antenne Centre TV (BE) (fix #286)
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -120,6 +121,7 @@
 [Add] channels/jp/tvo channel logo
 [Add] Slovenian channels
 [Add] Ethiopian channels
+[Add] channels/be/actv channel logo
     </news>
     <assets>
       <icon>icon.png</icon>
