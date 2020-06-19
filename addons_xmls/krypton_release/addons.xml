@@ -85,7 +85,7 @@
       <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.5" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.6" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
@@ -119,6 +119,7 @@
 [Version 1.0.5]
 [Add] channels/jp/nhk channel logo
 [Add] channels/jp/tvo channel logo
+[Version 1.0.6]
 [Add] Slovenian channels
 [Add] Ethiopian channels
 [Add] channels/be/actv channel logo

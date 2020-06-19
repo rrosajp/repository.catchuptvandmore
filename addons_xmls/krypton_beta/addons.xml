@@ -57,23 +57,7 @@
     <email>catch.up.tv.and.more at gmail dot com</email>
     <source>https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore</source>
     <news>
-[Version 0.2.22]
-[Fix/Improve] Website - INA
-[Fix] Catch-up - TVER (JP)
-[Fix] Live TV - Télé Quebec (CA)
-[Improve] France TV - Add default sorting order (fix #302)
-[Add] Live TV - RTVSLO channels (SI) (fix #308)
-[Fix] Catch-up - Africa 24 (WO)
-[Fix] Catch-up - NHK World (WO)
-[Remove] Catch-up - 6play 100% Foot (FR)
-[Fix] Catch-up - LCI (FR) - Missing video title
-[Fix] Catch-up - TBS News (JP) - Still need work for the image
-[Fix] Catch-up - GameOne (FR)
-[Fix] Catch-up - Paramount Channel (FR)
-[Fix] Catch-up - Caledonia (FR)
-[Add] Live TV - Ethiopian channels (ET) (fix #305)
-[Merge] RMC Story and RMC Découverte module (FR)
-[Add] Live TV - Antenne Centre TV (BE) (fix #286)
+[Version 0.2.23]
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -85,7 +69,7 @@
       <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.5" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.6" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
@@ -119,6 +103,7 @@
 [Version 1.0.5]
 [Add] channels/jp/nhk channel logo
 [Add] channels/jp/tvo channel logo
+[Version 1.0.6]
 [Add] Slovenian channels
 [Add] Ethiopian channels
 [Add] channels/be/actv channel logo
