@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.23~beta05" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.23~beta06" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.codequick" version="0.9.12" />
@@ -66,6 +66,8 @@
 [Fix] Catchup TV - Jack (mycanal) (FR)
 [Remove] Live TV - Mont Blanc Live TV (FR)
 [Fix] Live TV - NPO channels (NL)
+[Fix] Catchup TV - Raiplay (IT) - Work from jmzambon !
+[Fix] Catchup TV - Spectacle et Culture (FranceTV) (FR)
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
     <assets>
