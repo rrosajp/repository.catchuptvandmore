@@ -65,6 +65,7 @@
 [Fix] Live TV - BFM Business (FR)
 [Fix] Website - Allocine (FR)
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
+[Move] Catch-Up TV - France TV (FR) - All France TV channels are now in 'france.tv' folder like the official website
     </news>
     <assets>
       <icon>icon.png</icon>
@@ -76,7 +77,7 @@ Visit WebSite - http://mpdb.tv/#home which host the french forum used by users o
       <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.6" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.7" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
@@ -91,29 +92,8 @@ Visit WebSite - http://mpdb.tv/#home which host the french forum used by users o
     <email>catch.up.tv.and.more at gmail dot com</email>
     <source>https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore</source>
     <news>
-[Version 1.0.1]
-[Add] Cameroon flag
-[Add] CRTV channel logo
-[Add] CRTV News channel logo
-[Version 1.0.2]
-[Fix] Fix error in addon.xml
-[Version 1.0.3]
-[Fix] Use same size for root and countries images
-[Version 1.0.4]
-[Move] channels/ca/v_noovo.png --&gt; channels/ca/vtele.png
-[Add] channels/ch/telem1 channel logo
-[Add] channels/ca/lcn channel logo
-[Add] channels/ca/yoopa channel logo
-[Add] channels/be/ladeux channel logo
-[Add] channels/be/latrois channel logo
-[Add] channels/be/laune channel logo
-[Version 1.0.5]
-[Add] channels/jp/nhk channel logo
-[Add] channels/jp/tvo channel logo
-[Version 1.0.6]
-[Add] Slovenian channels
-[Add] Ethiopian channels
-[Add] channels/be/actv channel logo
+[Version 1.0.7]
+[Add] france.tv channel logo
     </news>
     <assets>
       <icon>icon.png</icon>
