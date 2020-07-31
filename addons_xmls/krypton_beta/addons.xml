@@ -60,6 +60,9 @@
 [Version 0.2.25]
 [FR - MYTF1] Move all TF1 group channels in MYTF1 folder
 [FR - MYTF1] Add search feature
+[FR - 6play] Move all M6 group channels in 6play folder
+[FR - myCANAL] Move all Canal+ group channels in myCANAL folder
+[FR - NRJ Play] Move NRJ 12 and Chérie 25 in NRJ Play folder
 ----
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
@@ -73,7 +76,7 @@ Visit WebSite - http://mpdb.tv/#home which host the french forum used by users o
       <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.8" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.9" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
@@ -90,6 +93,8 @@ Visit WebSite - http://mpdb.tv/#home which host the french forum used by users o
     <news>
 [Version 1.0.8]
 [Add] Equidia and BSmart channel logo
+[Version 1.0.9]
+[Add] 6play, MYTF1, NRJ Play and myCANAL logo
     </news>
     <assets>
       <icon>icon.png</icon>
