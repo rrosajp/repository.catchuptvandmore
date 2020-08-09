@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.25~beta06" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.25~beta07" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.codequick" version="0.9.13" />
@@ -68,6 +68,9 @@
 [BE - RTBF] Fix Live TV with no audio (DRM)
 [CH - RTS] Fix Live TV with no audio (DRM)
 [Core] Bump CodeQuick 0.9.13 - Kill xxxx_bridge functions
+[NL - NPO] Fix Lives TV (Audio drop, NPO 1 and 2, Rename NPO 3 to NPO Zapp)
+[FR - Equidia] Add Catchup-TV (Courses and Emissions)
+[CA - NOOVO.TV] Fix Catchup-TV
 ----
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
