@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.26~beta02" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.26~beta03" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.codequick" version="0.9.13" />
@@ -62,6 +62,9 @@
 [WO - France 24] Fix Catch-Up TV
 [FR - MyCanal] Fix Catch-up TV (More videos are available - DRM still not working)
 [FR - Tébéo/TébéSud] Fix Live TV
+[FR - TVR] Fix Live TV
+[FR - M6 Boutique] Remove Live TV not present in 6Play
+[FR - Equidia] Fix Catch-up TV
 ----
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
