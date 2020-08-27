@@ -70,7 +70,7 @@
       <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.9" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="resource.images.catchuptvandmore" name="Catch-up TV &amp; More channel logos and artwork" version="1.0.10" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
@@ -88,7 +88,9 @@
 [Version 1.0.8]
 [Add] Equidia and BSmart channel logo
 [Version 1.0.9]
-[Add] 6play, MYTF1, NRJ Play and myCANAL logo
+[Add] 6play, MYTF1, NRJ Play, myCANAL and RTLplay logo
+[Version 1.0.10]
+[Add/Updates] Some new logos and update existing logos
     </news>
     <assets>
       <icon>icon.png</icon>
