@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.26~beta07" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.26~beta08" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.codequick" version="0.9.13" />
@@ -76,9 +76,13 @@
 [ES - RTVE] Add Live TV (La 1, La 2, Teledeporte, Canal 24 Horas)
 [BE - VRTNu] Fix Catch-up TV
 [ES - Trece] Add Live TV
-[BE - TV Lux] Fix Live TV
+[BE - TV Lux] Fix Live TV And Catch-up TV
 [BE - TéléMB] Fix Live TV
 [BE - RTC Télé Liège] Fix Live TV
+[UK - Blaze TV] Fix Catch-up TV
+[BE - RTBF] Improvements used API
+[Change] Move Arte code to resolver_proxy
+[UK - Sky Sports] Fix Catch-up TV
 ----
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
