@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.26~beta10" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.27~beta00" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.codequick" version="0.9.13" />
@@ -86,6 +86,7 @@
 [FR - BFM Business] Fix Live TV
 [FR - Allocine] Fix Search
 [BE - RTBF] Fix Catch-up TV
+[BE - RTBF] Rename La Deux to Tipik
 ----
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
