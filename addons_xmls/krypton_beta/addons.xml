@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.27~beta08" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.27~beta09" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.codequick" version="0.9.13" />
@@ -70,6 +70,7 @@
 [FR - FranceTV] Add DRM support for catchup TV
 [CA - TeleQuebec] Fix Live TV
 [FR - MyCanal] Fix Catch-up TV
+[FR - Gulli] Fix Live TV
 ----
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
