@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.27~beta10" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.27~beta11" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.codequick" version="0.9.13" />
@@ -72,6 +72,9 @@
 [FR - MyCanal] Fix Catch-up TV
 [FR - Gulli] Fix Live TV
 [FR - BSmart] Fix Live TV
+[FR - BFM Business] Fix Catch-up TV
+[UK - DPLAY] Add Live TV and Catch-up TV (Quest, Quest Red, Really, ...)
+[UK - QuestOD] Move code to Dplay
 ----
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
