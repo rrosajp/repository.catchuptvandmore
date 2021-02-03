@@ -14,7 +14,7 @@
     <platform>all</platform>  
     <website>https://catch-up-tv-and-more.github.io/</website>
   </extension>
-</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.30~beta03" provider-name="SylvainCecchetto,wwark">
+</addon><addon id="plugin.video.catchuptvandmore" name="Catch-up TV &amp; More" version="0.2.30~beta04" provider-name="SylvainCecchetto,wwark">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.codequick" version="0.9.13" />
@@ -72,6 +72,7 @@
 [FR - TF1 Thematique] Fix Catch-up TV (Histoire, Breizh, Ushuaia)
 [FR - Culturebox] Add Live TV
 [FR - CNews] Possible fix to update video list
+[Live TV] Add IPTV Manager support
 ----
 Visit WebSite - http://mpdb.tv/#home which host the french forum used by users of CU TV and More
     </news>
