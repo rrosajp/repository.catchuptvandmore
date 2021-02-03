@@ -71,7 +71,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 	unzip -q ./temp/master.zip -d ./temp
 
 	# Set reuselanguageinvoker to true
-	sed -i 's#<reuselanguageinvoker>false</reuselanguageinvoker>#<reuselanguageinvoker>true</reuselanguageinvoker>#g' ./temp/plugin.video.catchuptvandmore-master/plugin.video.catchuptvandmore/addon.xml
+	sed -i 's#<reuselanguageinvoker>false</reuselanguageinvoker>#<reuselanguageinvoker>true</reuselanguageinvoker>#g' ./temp/plugin.video.catchuptvandmore-master/addon.xml
 
 	# Update commit message
 	commit_msg="$commit_msg Krypton release,"
@@ -86,7 +86,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 		--info ./addons_xmls/krypton_release/addons.xml \
 		--checksum ./addons_xmls/krypton_release/addons.xml.md5 \
 		./repo_addons_src/catchuptvandmore.kodi.krypton.release/ \
-		./temp/plugin.video.catchuptvandmore-master/plugin.video.catchuptvandmore/ \
+		./temp/plugin.video.catchuptvandmore-master/ \
 		https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore\#master:resource.images.catchuptvandmore
 else
 	echo -e "\n\t--> No need to update this repository"
@@ -133,7 +133,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 	unzip -q ./temp/dev.zip -d ./temp
 
 	# Set reuselanguageinvoker to true
-	sed -i 's#<reuselanguageinvoker>false</reuselanguageinvoker>#<reuselanguageinvoker>true</reuselanguageinvoker>#g' ./temp/plugin.video.catchuptvandmore-dev/plugin.video.catchuptvandmore/addon.xml
+	sed -i 's#<reuselanguageinvoker>false</reuselanguageinvoker>#<reuselanguageinvoker>true</reuselanguageinvoker>#g' ./temp/plugin.video.catchuptvandmore-dev/addon.xml
 	
 	# Update commit message
 	commit_msg="$commit_msg Krypton beta,"
@@ -148,7 +148,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 		--info ./addons_xmls/krypton_beta/addons.xml \
 		--checksum ./addons_xmls/krypton_beta/addons.xml.md5 \
 		./repo_addons_src/catchuptvandmore.kodi.krypton.beta/ \
-		./temp/plugin.video.catchuptvandmore-dev/plugin.video.catchuptvandmore/ \
+		./temp/plugin.video.catchuptvandmore-dev/ \
 		https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore\#master:resource.images.catchuptvandmore
 else
 	echo -e "\n\t--> No need to update this repository"
@@ -194,7 +194,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 	unzip -q ./temp/kodi19.zip -d ./temp
 
 	# Set reuselanguageinvoker to true
-	sed -i 's#<reuselanguageinvoker>false</reuselanguageinvoker>#<reuselanguageinvoker>true</reuselanguageinvoker>#g' ./temp/plugin.video.catchuptvandmore-kodi19/plugin.video.catchuptvandmore/addon.xml
+	sed -i 's#<reuselanguageinvoker>false</reuselanguageinvoker>#<reuselanguageinvoker>true</reuselanguageinvoker>#g' ./temp/plugin.video.catchuptvandmore-kodi19/addon.xml
 	
 	# Update commit message
 	commit_msg="$commit_msg Matrix beta,"
@@ -209,7 +209,7 @@ if [ "${need_to_update_repo}" == "yes" ]; then
 		--info ./addons_xmls/matrix_beta/addons.xml \
 		--checksum ./addons_xmls/matrix_beta/addons.xml.md5 \
 		./repo_addons_src/catchuptvandmore.kodi.matrix.beta/ \
-		./temp/plugin.video.catchuptvandmore-kodi19/plugin.video.catchuptvandmore/ \
+		./temp/plugin.video.catchuptvandmore-kodi19/ \
 		https://github.com/Catch-up-TV-and-More/resource.images.catchuptvandmore\#master:resource.images.catchuptvandmore \
 		https://github.com/Catch-up-TV-and-More/script.module.youtube.dl\#kodi19 \
 		https://github.com/Catch-up-TV-and-More/script.module.codequick\#kodi19:script.module.codequick
